@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CabSettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/cab_app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cab_toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/button" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/cab_close_button"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/close"
+                    app:tint="@color/black" />
+
+                <ImageView
+                    android:id="@+id/cab_save_button"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/save_edited_info"
+                    app:tint="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"/>
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cab_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        android:layout_below="@+id/cab_app_bar_settings"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="@color/greysexyvala"/>
+
+  <!--  <TextView
+        android:id="@+id/cab_change_picture_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cab_profile_image"
+        android:layout_marginTop="7dp"
+        android:text="Change Picture."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/greysexyvala"/> -->
+
+    <EditText
+        android:id="@+id/cab_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:layout_below="@+id/cab_profile_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/cab_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Number"
+        android:inputType="number"
+        android:layout_below="@+id/cab_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/cab_driver_car_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Car Name"
+        android:layout_below="@+id/cab_phone_number"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

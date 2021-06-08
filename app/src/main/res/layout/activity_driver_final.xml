@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".DriverFinalActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <Button
+            android:id="@+id/driver_final_setting_btn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:text="Settings"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:id="@+id/driver_final_logout_btn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:text="LogOut"
+            android:background="@drawable/button"/>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:background="@color/button"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cab_profile_image_cust"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/profile"
+            map:civ_border_width="2dp"
+            android:layout_marginStart="15dp"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            map:civ_border_color="@color/greysexyvala"
+            />
+
+        <TextView
+            android:id="@+id/cab_name_cust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cab_profile_image_cust"
+            android:text="Customer's Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/cab_phone_cust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cab_profile_image_cust"
+            android:text="Customer's Name"
+            android:layout_below="@+id/cab_name_cust"
+            android:textSize="14sp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="15dp"
+
+            />
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/phone"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

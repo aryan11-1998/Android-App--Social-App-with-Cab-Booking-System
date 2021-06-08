@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".CabSettingsActivity"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".CustomerFinalActivity"
+            android:label="@string/title_activity_customer_final" />
+        <activity
+            android:name=".DriverFinalActivity"
+            android:label="@string/title_activity_driver_final" />
+        <activity
+            android:name=".DriverHomeActivity"
+            android:label="@string/title_activity_driver_home"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".CabMainActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".ContactNumberActivity" />
+        <activity
+            android:name=".CustMapActivity"
+            android:label="@string/title_activity_cust_map" />
+        <activity
+            android:name=".MapDriver"
+            android:label="@string/title_activity_map_driver" />
+        <activity android:name=".DriverMapActivity" />
+        <activity
+            android:name=".DriversMapActivity"
+            android:label="@string/title_activity_drivers_map" />
+        <activity android:name=".WelcomeCabActivity" />
+        <activity android:name=".SplashActivityCab" />
+        <activity
+            android:name=".MyPostActivity"
+            android:parentActivityName=".ProfileActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".FriendsActivity" />
+        <activity
+            android:name=".FriendsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PersonProfileActivity"
+            android:parentActivityName=".FindFriendsActivity" />
+        <activity
+            android:name=".CommentsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FindFriendsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ClickPostActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".SetupActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>
