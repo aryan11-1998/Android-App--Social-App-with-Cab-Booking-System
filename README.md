@@ -10,5 +10,3 @@ This app perfoms multiple features like:-
     
 This Multipurpose android app has used firebase Realtime database for storing user data.
 
-![Screenshot_20210608-205023](https://user-images.githubusercontent.com/85566446/121213123-9928b500-c89b-11eb-861c-5a980c4075b9.png)
-
